@@ -16,20 +16,20 @@ import static org.junit.Assert.assertNotNull;
 @RequiresKubernetes
 public class ShopTest {
 
-    @Named("nginxservice")
+    @Named("redis-master")
     @ArquillianResource
-    Service nginx;
+    Service redis;
 
-    @Named("nginxservice")
+    @Named("redis-master")
     @PortForward
     @ArquillianResource
     URL url;
 
     @Test
     public void shouldFindServiceInstance() throws IOException {
-        assertNotNull(nginx);
-        assertNotNull(nginx.getSpec());
-        assertNotNull(nginx.getSpec().getPorts());
-        assertFalse(nginx.getSpec().getPorts().isEmpty());
+        assertNotNull(redis);
+        assertNotNull(redis.getSpec());
+        assertNotNull(redis.getSpec().getPorts());
+        assertFalse(redis.getSpec().getPorts().isEmpty());
     }
 }
