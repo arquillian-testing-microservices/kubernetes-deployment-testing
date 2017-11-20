@@ -5,7 +5,7 @@
     http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
 
   <extension qualifier="kubernetes">
-    <!--<property name="env.config.resource.name">nginx_service.yaml</property>-->
+    <property name="env.config.resource.name">guestbook-all-in-one.yaml</property>
   </extension>
 
 </arquillian>

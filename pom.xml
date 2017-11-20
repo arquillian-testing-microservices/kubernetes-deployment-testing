@@ -37,6 +37,13 @@
       <artifactId>arquillian-cube-kubernetes</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.fabric8</groupId>
+      <artifactId>kubernetes-assertions</artifactId>
+      <version>2.2.101</version>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
